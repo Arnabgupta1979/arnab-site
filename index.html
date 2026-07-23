@@ -25,7 +25,8 @@
 .hero-btns  { display:flex; gap:0.8rem; flex-wrap:wrap; }
 .hero-card  { background:rgba(247,242,233,0.06); border:1px solid rgba(196,124,42,0.22); border-radius:12px; padding:2rem; backdrop-filter:blur(8px); position:relative; overflow:hidden; }
 .hero-card::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:linear-gradient(90deg,var(--amber),transparent); }
-.hero-av    { width:72px; height:72px; border-radius:50%; background:linear-gradient(135deg,var(--forest-3),var(--amber)); display:flex; align-items:center; justify-content:center; font-family:var(--serif); font-size:1.6rem; font-weight:700; color:var(--white); margin-bottom:1.2rem; border:2px solid rgba(196,124,42,0.4); }
+.hero-av    { width:96px; height:96px; border-radius:50%; margin-bottom:1.2rem; border:2px solid rgba(196,124,42,0.55); box-shadow:0 10px 28px rgba(0,0,0,0.28); overflow:hidden; background:var(--forest-3); }
+.hero-av img { width:100%; height:100%; display:block; object-fit:cover; object-position:50% 32%; }
 .hero-card h3   { color:var(--cream); font-size:1.25rem; margin-bottom:0.3rem; }
 .hero-card .role { font-size:0.82rem; color:rgba(247,242,233,0.6); margin-bottom:1.4rem; line-height:1.5; }
 .hero-card .role strong { color:var(--amber-3); }
@@ -73,7 +74,9 @@
     </div>
 
     <div class="hero-card">
-      <div class="hero-av">AG</div>
+      <div class="hero-av">
+        <img src="assets/arnab-gupta-profile.jpg" alt="Portrait of Arnab Gupta" width="1003" height="1051" decoding="async" fetchpriority="high">
+      </div>
       <h3>Arnab Gupta</h3>
       <p class="role">Senior Researcher &amp; Seed Systems Advisor<br><strong>Wageningen Social &amp; Economic Research (WSER)</strong><br>Wageningen University &amp; Research</p>
       <div class="stat-grid">
