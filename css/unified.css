@@ -49,3 +49,29 @@ a,button,select,summary{outline-offset:5px}a:focus-visible,button:focus-visible,
 [hidden]{display:none!important}
 
 .pt-a{background:linear-gradient(135deg,#fbe4e1,#b96559)}.pt-g{background:linear-gradient(135deg,#dff4f0,#4ca59c)}.pt-m{background:linear-gradient(135deg,#253253,#147c75)}
+
+/* CV revision: natural portrait proportions and clearer content hierarchy. */
+.home-hero{padding:48px 0}.home-grid{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:70px}
+.home-portrait{max-width:360px;width:100%;justify-self:end;padding:16px;border-radius:28px;background:#ffffff0b}
+.home-portrait img{display:block;width:100%;height:auto;aspect-ratio:auto;object-fit:contain;scale:1;border-radius:12px}
+.home-portrait figcaption{padding:18px 8px 4px;background:transparent}
+.books-page .author-portrait{border-radius:28px}.books-page .portrait-frame{aspect-ratio:auto;border-radius:12px}
+.books-page .portrait-frame img{height:auto;aspect-ratio:auto;object-fit:contain;scale:1}
+.section-nav{display:flex;flex-wrap:wrap;gap:12px;padding:24px 0;border-bottom:1px solid #dce3ee}
+.section-nav a{padding:9px 15px;border:1px solid #dce3ee;border-radius:999px;font-size:12px;color:#185b59;background:#f0f8fb}
+.section-nav a:hover{background:#dff4f0}.sec h2{margin-bottom:28px}.section-lead{max-width:730px;margin-bottom:30px}
+.section-tint{background:#f1f6fc}.proposal-section{background:#eef0fc}.work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.work-card{background:#fff;border:1px solid #dce3ee;border-radius:18px;padding:28px;min-width:0}
+.work-card h3{font-size:23px;line-height:1.25;margin:16px 0 14px;color:#20243e}.work-card p{font-size:14px;line-height:1.75;margin-bottom:16px}.work-card p:last-child{margin-bottom:0}
+.work-status{display:inline-block;background:#dff4f0;color:#185b59;border-radius:9px;font-size:10px;font-weight:600;letter-spacing:.025em;padding:7px 10px;line-height:1.5}
+.proposal-section .work-status{background:#e8e6fa;color:#4a407d}.work-card .work-role{font-weight:600;color:#354361;font-size:12px;margin-bottom:5px}.work-card .work-place{font-size:12px;color:#596278;margin-bottom:16px}
+.biography-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:65px;align-items:start}.biography-copy p{margin-bottom:22px;line-height:1.85}.biography-copy h3{font-size:27px;margin:32px 0 18px}.biography-aside{display:grid;gap:24px}
+.bio-portrait{margin:0;border:1px solid #dce3ee;border-radius:22px;padding:14px;background:#f0f8fb}.bio-portrait img{display:block;width:100%;height:auto;border-radius:10px}.bio-portrait figcaption{font-size:12px;line-height:1.7;padding:16px 4px 3px;color:#454e70}
+.fact-panel{background:#f0f8fb;border:1px solid #dce3ee;padding:28px;border-radius:18px;margin-top:24px}.biography-aside .fact-panel{margin-top:0}.fact-panel p{font-size:14px;line-height:1.8}.fact-panel a{color:#126f68;overflow-wrap:anywhere;font-size:14px}
+.detail-list{padding-left:18px;margin:0}.detail-list li{margin-bottom:13px;line-height:1.7;font-size:14px}.tl-body p{font-size:13px;line-height:1.75;margin:10px 0 0}.tl-item{padding-bottom:28px}
+.pub-list{display:grid;gap:20px}.pub-item{background:#fff;border:1px solid #dce3ee;padding:28px}.pub-item h3{font-size:22px;line-height:1.35;margin-bottom:12px}.pub-item p{font-size:14px;margin:10px 0}.pub-item .pub-authors,.pub-item .pub-source{font-size:12px;color:#596278;line-height:1.7}.source-links{display:flex;gap:16px;flex-wrap:wrap;margin-top:32px}.inline-text-link{text-decoration:underline;color:#126f68}
+@media(max-width:1000px){.work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-grid{gap:40px}.biography-grid{gap:40px;grid-template-columns:minmax(0,1fr) 260px}}
+@media(max-width:720px){.home-grid,.biography-grid{grid-template-columns:1fr;gap:32px}.home-hero{padding:40px 0}.home-portrait{justify-self:center;max-width:330px;border-radius:24px}.work-grid{grid-template-columns:1fr}.work-card{padding:24px}.biography-aside{max-width:360px;width:100%;justify-self:center}.biography-copy h2{font-size:36px}.sec h2{margin-bottom:24px}.pub-item{padding:23px}.section-nav{gap:8px}.section-nav a{font-size:11px;padding:8px 12px}}
+
+.content-split>div>p{margin-bottom:22px}.detail-list{list-style:disc}.work-card .detail-list{margin-top:18px}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){.work-card{transition:transform .25s,box-shadow .25s}.work-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px #18213f0a}}

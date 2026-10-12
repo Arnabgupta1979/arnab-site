@@ -29,8 +29,10 @@ The site is a personal portfolio with external retailer links. Lulu and direct d
 
 ## Validation and content
 
-Local page and asset links, cross-page anchors, unique IDs and JavaScript syntax are checked. Shared navigation includes keyboard handling, and entrance animations honour reduced-motion preferences. Content is visible without animation APIs. The previously inert publication `#` links are now plain headings; no DOI or article destination has been invented. Original research/project statements are retained and have not undergone an independent publication or biography audit.
+The professional pages have been revised against Arnab’s refreshed CV. Myanmar has its own biography chapter and both historical and ongoing project entries. Horizon Europe proposals are separated from active work; prototypes are labelled as development activities. Education dates absent from the CV are omitted. The MIT course is dated 2024. Publication links lead to identified WUR or author-uploaded records, without current citation counts or an unverified ORCID identifier.
 
-Uncurried is now marked published, its description mentions practical recipes, and the biography's obsolete 'three books in progress' wording has been replaced.
+Portraits preserve their natural proportions on the homepage, biography and bookshelf. The site retains shared sans-serif typography, rounded controls, the original cover assets and reduced-motion support.
 
-Cloudflare setup and domain changes are deferred. This update does not alter DNS or buy services.
+Local page and asset links, cross-page anchors, unique IDs and JavaScript syntax are checked. Content remains readable without animation APIs. No uploaded CV, personal telephone number or personal email address is included in the public files.
+
+Cloudflare setup and domain changes are deferred.
