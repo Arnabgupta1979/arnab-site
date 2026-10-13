@@ -75,3 +75,145 @@ a,button,select,summary{outline-offset:5px}a:focus-visible,button:focus-visible,
 
 .content-split>div>p{margin-bottom:22px}.detail-list{list-style:disc}.work-card .detail-list{margin-top:18px}
 @media(hover:hover) and (prefers-reduced-motion:no-preference){.work-card{transition:transform .25s,box-shadow .25s}.work-card:hover{transform:translateY(-2px);box-shadow:0 10px 24px #18213f0a}}
+
+/* Site-wide alternating surfaces and readable supporting text. */
+
+:is(.portfolio-page,.books-page) :is(.do-card,.home-book-card,.work-card,.pub-item,.fact-panel,.sidebar-card,.recent-card,.proj-card,.contact-method,.writing-books-banner,.other-book,.direct-panel,.idea,.faq-list details,.bio-portrait,.author-portrait,.home-portrait){
+  --panel-fill:#1c2948;
+  --panel-title:#ffffff;
+  --panel-copy:#dce5f6;
+  --panel-accent:#b5eee2;
+  --panel-edge:#647ba0;
+  --panel-badge:#c6eee4;
+  --panel-badge-text:#153d3d;
+}
+:is(.portfolio-page,.books-page) :is(.do-card,.home-book-card,.work-card,.pub-item,.sidebar-card,.recent-card,.proj-card,.contact-method,.other-book,.idea,.faq-list details):nth-child(even),
+.portfolio-page .biography-aside .fact-panel{
+  --panel-fill:#e7f1f5;
+  --panel-title:#18213f;
+  --panel-copy:#354361;
+  --panel-accent:#12635e;
+  --panel-edge:#849dad;
+  --panel-badge:#1c2948;
+  --panel-badge-text:#ffffff;
+}
+.books-page .ideas-grid .idea:nth-child(odd),
+.portfolio-page .home-portrait{
+  --panel-fill:#e7f1f5;
+  --panel-title:#18213f;
+  --panel-copy:#354361;
+  --panel-accent:#12635e;
+  --panel-edge:#849dad;
+  --panel-badge:#1c2948;
+  --panel-badge-text:#ffffff;
+}
+.books-page .ideas-grid .idea:nth-child(even){
+  --panel-fill:#1c2948;
+  --panel-title:#ffffff;
+  --panel-copy:#dce5f6;
+  --panel-accent:#b5eee2;
+  --panel-edge:#647ba0;
+  --panel-badge:#c6eee4;
+  --panel-badge-text:#153d3d;
+}
+:is(.portfolio-page,.books-page) :is(.do-card,.home-book-card,.work-card,.pub-item,.fact-panel,.sidebar-card,.recent-card,.proj-card,.contact-method,.writing-books-banner,.other-book,.direct-panel,.idea,.faq-list details,.bio-portrait,.author-portrait,.home-portrait){
+  background:var(--panel-fill);
+  color:var(--panel-title);
+  border:1px solid var(--panel-edge);
+  border-top:4px solid var(--panel-accent);
+  border-radius:18px;
+  box-shadow:0 8px 24px #18213f16;
+}
+:is(.portfolio-page,.books-page) :is(.do-card,.home-book-card,.work-card,.pub-item,.fact-panel,.sidebar-card,.recent-card,.proj-card,.contact-method,.writing-books-banner,.other-book,.direct-panel,.idea,.faq-list details,.bio-portrait,.author-portrait,.home-portrait) :is(h2,h3,h4,h5,summary){color:var(--panel-title)}
+:is(.portfolio-page,.books-page) :is(.do-card,.home-book-card,.work-card,.pub-item,.fact-panel,.sidebar-card,.recent-card,.proj-card,.contact-method,.writing-books-banner,.other-book,.direct-panel,.idea,.faq-list details,.bio-portrait,.author-portrait,.home-portrait) :is(p,li,figcaption,.work-role,.work-place,.pub-authors,.pub-source,.pub-year,.idea-index){color:var(--panel-copy)}
+:is(.portfolio-page,.books-page) :is(.do-card,.home-book-card,.work-card,.pub-item,.fact-panel,.sidebar-card,.recent-card,.proj-card,.contact-method,.writing-books-banner,.other-book,.direct-panel,.idea,.faq-list details,.bio-portrait,.author-portrait,.home-portrait) :is(.label,.eyebrow,.category,.card-link,.text-button,.idea-link,.work-place,.pub-year){color:var(--panel-accent)}
+:is(.portfolio-page,.books-page) :is(.do-card,.home-book-card,.work-card,.pub-item,.fact-panel,.sidebar-card,.recent-card,.proj-card,.contact-method,.writing-books-banner,.other-book,.direct-panel,.idea,.faq-list details,.bio-portrait,.author-portrait,.home-portrait) a:not(.btn):not(.button){color:var(--panel-accent)}
+:is(.portfolio-page,.books-page) :is(.do-card,.home-book-card,.work-card,.pub-item,.fact-panel,.sidebar-card,.recent-card,.proj-card,.contact-method,.writing-books-banner,.other-book,.direct-panel,.idea,.faq-list details,.bio-portrait,.author-portrait,.home-portrait) :is(.btn-ol,.button.outline){border-color:var(--panel-accent);color:var(--panel-title);background:transparent}
+:is(.portfolio-page,.books-page) :is(.do-card,.home-book-card,.work-card,.pub-item,.fact-panel,.sidebar-card,.recent-card,.proj-card,.contact-method,.writing-books-banner,.other-book,.direct-panel,.idea,.faq-list details,.bio-portrait,.author-portrait,.home-portrait) :is(.btn-ol,.button.outline):hover{background:var(--panel-badge);color:var(--panel-badge-text)}
+:is(.portfolio-page,.books-page) :is(.do-card,.home-book-card,.work-card,.pub-item,.fact-panel,.sidebar-card,.recent-card,.proj-card,.contact-method,.writing-books-banner,.other-book,.direct-panel,.idea,.faq-list details,.bio-portrait,.author-portrait,.home-portrait) .button.dark{background:var(--panel-badge);color:var(--panel-badge-text);border-color:var(--panel-badge)}
+:is(.portfolio-page,.books-page) :is(.do-card,.home-book-card,.work-card,.pub-item,.fact-panel,.sidebar-card,.recent-card,.proj-card,.contact-method,.writing-books-banner,.other-book,.direct-panel,.idea,.faq-list details,.bio-portrait,.author-portrait,.home-portrait) :is(.work-status,.small-stamp,.tag){background:var(--panel-badge);color:var(--panel-badge-text);border:1px solid var(--panel-edge)}
+.books-page .other-book .book-subtitle,
+.books-page .other-book p:not(.category){color:var(--panel-copy)!important}
+.books-page .other-book .category{color:var(--panel-accent)}
+.books-page .author-portrait figcaption,
+.portfolio-page .home-portrait figcaption{background:transparent;color:var(--panel-title)}
+.books-page .author-portrait figcaption span,
+.portfolio-page .home-portrait figcaption>span{color:var(--panel-accent)}
+.portfolio-page .do-card .do-icon{color:#18213f}
+.books-page .ideas-grid{gap:18px;border:0}
+.books-page .ideas-grid .idea{padding:28px 24px;min-width:0;min-height:290px}
+.books-page .ideas-grid .idea:hover{background:var(--panel-fill)}
+.books-page .faq-list{display:grid;gap:14px}
+.books-page .faq-list details{padding:20px 24px}
+.books-page .faq-list summary:after{color:var(--panel-accent)}
+.books-page .direct-panel{border-radius:18px}
+.books-page .direct-panel .shop-illustration{border-radius:14px 14px 0 0}
+.portfolio-page .home-book-card{color:var(--panel-title)}
+:is(.portfolio-page,.books-page) :is(.do-card,.home-book-card,.work-card,.pub-item,.fact-panel,.sidebar-card,.recent-card,.proj-card,.contact-method,.writing-books-banner,.other-book,.direct-panel,.idea,.faq-list details,.bio-portrait,.author-portrait,.home-portrait):focus-visible,
+:is(.portfolio-page,.books-page) :is(.do-card,.home-book-card,.work-card,.pub-item,.fact-panel,.sidebar-card,.recent-card,.proj-card,.contact-method,.writing-books-banner,.other-book,.direct-panel,.idea,.faq-list details,.bio-portrait,.author-portrait,.home-portrait) :is(a,button,summary):focus-visible{outline:3px solid var(--panel-accent);outline-offset:5px}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+  :is(.portfolio-page,.books-page) :is(.do-card,.home-book-card,.work-card,.pub-item,.fact-panel,.sidebar-card,.recent-card,.proj-card,.contact-method,.writing-books-banner,.other-book,.direct-panel,.idea,.faq-list details,.bio-portrait,.author-portrait,.home-portrait):hover{box-shadow:0 14px 32px #18213f24}
+}
+
+/* Supporting copy stays readable on desktop and mobile. */
+.portfolio-page .do-card .btn{font-size:15px!important;min-height:46px}
+body{font-size:16px;line-height:1.75}
+.label,.eyebrow,.category,.home-copy .eyebrow,.section-top .label{font-size:12px;line-height:1.6;letter-spacing:1.5px}
+.site-header #navigation{font-size:14px;gap:18px}
+.site-header .menu-toggle{font-size:14px}
+.site-header .brand{font-size:13px}.site-header .brand small{font-size:10px;letter-spacing:1.1px}
+.btn,.button,.retailer-actions .button,.text-button,.card-link,.reading-links,.reading-links button,.filter-btn{font-size:15px;line-height:1.5}
+.site-header #navigation .nav-shop{padding:11px 17px}
+.section-nav a{font-size:14px;padding:10px 16px}
+.home-note,.home-portrait figcaption,.bio-portrait figcaption,.hero-foot,.hero-foot small{font-size:14px;line-height:1.75}
+.home-portrait figcaption>span,.author-portrait figcaption,.author-portrait figcaption span{font-size:13px;line-height:1.75}
+.home-ribbon,.topic-ribbon,.geo-country{font-size:12px;line-height:1.6;letter-spacing:1px}
+.home-ribbon,.topic-ribbon{gap:20px}
+.work-card p,.do-card p,.home-book-card p,.pub-item p,.fact-panel p,.detail-list li,.tl-body p,
+.books-page .featured-detail>p,.books-page .other-book p:not(.category),.books-page .direct-panel p,
+.books-page .about p:not(.eyebrow):not(.about-lead),.books-page .faq-list p{font-size:16px;line-height:1.75}
+.books-page .other-book .book-subtitle{font-size:16px!important;line-height:1.6}
+.work-card .work-role,.work-card .work-place,.pub-item .pub-authors,.pub-item .pub-source{font-size:14px;line-height:1.7}
+.work-status,.small-stamp,.format-badges span,.idea-index,.section-heading>span{font-size:13px;line-height:1.6;letter-spacing:.025em}
+.work-card h3,.do-card h4,.home-book-card h3,.pub-item h3{font-size:25px;line-height:1.3}
+.home-book-card .label,.other-book .category{font-size:12px;line-height:1.6;letter-spacing:1px}
+.fact-panel a,.tl-org,.tl-period,.idea-link{font-size:14px;line-height:1.7}
+.books-page .purchase label,.books-page .purchase select,.books-page .faq-list summary{font-size:16px;line-height:1.6}
+.books-page .purchase select{min-height:48px}
+.books-page .fine-print{font-size:14px!important;color:#4b5d70!important;line-height:1.65}
+.books-page .ideas-head>p,.books-page .direct>div:first-child>p:last-child{font-size:16px;line-height:1.75}
+.books-page .idea h3{font-size:25px;line-height:1.35}
+.books-page .art-label,.books-page .art-caption>span{font-size:12px;line-height:1.5;letter-spacing:1px}
+.books-page .art-caption>span{max-width:175px}
+.site-footer p,.site-footer .footer-grid>div>a:not(.brand){font-size:15px;line-height:1.9}
+.site-footer .eyebrow{font-size:12px}.site-footer .brand{font-size:13px}.site-footer .brand small{font-size:10px}
+.site-footer .footer-bottom p,.site-footer .footer-bottom>a,.site-footer .footer-bottom .text-button{font-size:13px;line-height:1.7}
+.books-page dialog{background:#1c2948;color:#fff;border:1px solid #647ba0;border-radius:18px}
+.books-page .dialog-toolbar{background:#1c2948;color:#fff;border-color:#647ba0}
+.books-page .dialog-toolbar span{font-size:12px;line-height:1.6}
+.books-page .dialog-toolbar button{color:#fff}
+.books-page #reader-content p{font-size:18px;color:#dce5f6;line-height:1.8}
+.books-page #reader-content .eyebrow{font-size:12px;color:#b5eee2}
+.books-page #reader-content h2{color:#fff}
+.books-page #reader-content .button.dark{background:#c6eee4;color:#153d3d;border-color:#c6eee4}
+@media(max-width:1050px){.site-header #navigation{gap:14px}}
+@media(max-width:1000px){.books-page .ideas-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:720px){
+  .site-header .brand{font-size:12px}.site-header .brand small{font-size:9px;letter-spacing:.8px}
+  .site-header .menu-toggle{font-size:14px;padding:8px 10px}
+  .home-ribbon,.topic-ribbon{gap:12px;padding:18px 20px}
+  .home-book-card{grid-template-columns:90px minmax(0,1fr);padding:24px;gap:20px}.home-cover{width:90px}
+  .home-book-card h3,.work-card h3{font-size:24px}
+  .books-page .other-book{grid-template-columns:90px minmax(0,1fr);gap:20px;padding:24px}
+  .books-page .shelf-cover{width:90px}.books-page .other-book .inline-links{flex-wrap:wrap;gap:12px}
+  .books-page .other-book h3{font-size:27px}
+  .books-page .direct-panel .shop-illustration{margin:-28px -28px 25px}
+  .books-page .faq-list details{padding:18px 20px}
+}
+@media(max-width:480px){
+  .home-book-card,.books-page .other-book{grid-template-columns:1fr;gap:24px}
+  .home-cover,.books-page .shelf-cover{width:125px;justify-self:center;align-self:center}
+  .books-page .ideas-grid{grid-template-columns:1fr}.books-page .ideas-grid .idea{min-height:0;gap:18px}
+  .books-page .idea h3{margin:8px 0 12px}.books-page .art-caption{gap:14px}
+  .books-page .art-caption p{font-size:24px}.books-page .art-caption>span{max-width:140px}
+}
