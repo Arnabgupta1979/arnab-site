@@ -13,7 +13,9 @@ Unified static personal website for arnabgupta.nl. The existing portfolio and th
 - `js/main.js`: progressive entrance animation and research category filter.
 - `js/books.js`: excerpts, Amazon country selection and optional retailer links.
 - `js/shop-config.js`: public Lulu/Payhip URLs only.
-- `assets/books/`: optimised supplied portraits, covers and botanical imagery.
+- `assets/books/`: book covers and botanical imagery.
+- `assets/photos/`: portrait photos, the downloadable headshot and the 1200×630 link-preview image (`arnab-gupta-share.jpg`).
+- `sitemap.xml` and `robots.txt`: help search engines find every page. Add new pages to the sitemap.
 - `CNAME`: existing arnabgupta.nl domain; retained unchanged.
 - `.nojekyll`: publish the static files directly without Jekyll processing.
 
@@ -23,7 +25,7 @@ Keep the existing Pages configuration: deploy from the `main` branch, repository
 
 ## Editing
 
-Edit text in its HTML page and commit. Change shared appearance in `css/unified.css`. Add images to `assets/` and use relative paths. Navigation/footer HTML is intentionally included in each page so links remain usable without JavaScript; change the matching navigation links in all seven main pages when adding a new section.
+Edit text in its HTML page and commit. Each page's `<head>` holds its title, description, canonical address and link-preview tags; keep them in step with the page content. Structured data (JSON-LD) on the home, About and Books pages describes Arnab and his books for search engines. Change shared appearance in `css/unified.css`. Add images to `assets/` and use relative paths. Navigation/footer HTML is intentionally included in each page so links remain usable without JavaScript; change the matching navigation links in all seven main pages when adding a new section.
 
 The site is a personal portfolio with external retailer links. Lulu and direct digital sales stay inactive until genuine, tested public checkout URLs are supplied in `js/shop-config.js`. The repository contains no paid ebook downloads, payment credentials or functioning direct checkout. Before offering digital books outside Amazon, confirm KDP Select eligibility.
 
