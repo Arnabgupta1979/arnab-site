@@ -217,3 +217,12 @@ body{font-size:16px;line-height:1.75}
   .books-page .idea h3{margin:8px 0 12px}.books-page .art-caption{gap:14px}
   .books-page .art-caption p{font-size:24px}.books-page .art-caption>span{max-width:140px}
 }
+/* Portrait photos: Writing hero and Contact headshot */
+.hero-with-photo{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:55px;align-items:center}
+.hero-photo{margin:0;padding:12px;border:1px solid #d1e5ef24;border-radius:24px;background:#ffffff0b;box-shadow:0 25px 65px #060e252e}
+.hero-photo img{display:block;width:100%;height:auto;border-radius:12px}
+.headshot-panel{display:grid;grid-template-columns:110px minmax(0,1fr);gap:22px;align-items:center}
+.headshot-panel img{display:block;width:110px;height:110px;object-fit:cover;border-radius:12px}
+.headshot-panel p{margin:6px 0 10px}
+@media(max-width:720px){.hero-with-photo{grid-template-columns:1fr;gap:30px}.hero-photo{max-width:200px}}
+@media(max-width:420px){.headshot-panel{grid-template-columns:1fr}}
